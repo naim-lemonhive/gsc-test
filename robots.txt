@@ -1,4 +1,4 @@
-<!-- blocks everything incorrectly -->
 User-agent: *
 Allow: /
+
 Sitemap: https://bps.sitebeacon.io/sitemap.xml
