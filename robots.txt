@@ -1,0 +1,3 @@
+<!-- blocks everything incorrectly -->
+User-agent: *
+Disallow: /

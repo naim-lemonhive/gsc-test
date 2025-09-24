@@ -1,0 +1,28 @@
+<!-- forms with errors, invalid accessibility -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-10">
+
+  <h1 class="text-3xl">Contact Us</h1>
+
+  <!-- Form with accessibility issues -->
+  <form>
+    <label>Name</label>
+    <input type="text"><br><br>
+
+    <!-- Missing label -->
+    <input type="email" placeholder="Enter email"><br><br>
+
+    <!-- Wrong input type -->
+    <input type="number" placeholder="Your Message"><br><br>
+
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2">Submit</button>
+  </form>
+
+</body>
+</html>
