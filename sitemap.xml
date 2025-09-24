@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://gsc-test-umber.vercel.app/index.html</loc>
+    <loc>https://bps.sitebeacon.io/index.html</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://gsc-test-umber.vercel.app/missing-page.html</loc>
+    <loc>https://bps.sitebeacon.io/missing-page.html</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://gsc-test-umber.vercel.app/valid-page.html</loc>
+    <loc>https://bps.sitebeacon.io/valid-page.html</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://gsc-test-umber.vercel.app/about.html</loc>
+    <loc>https://bps.sitebeacon.io/about.html</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
