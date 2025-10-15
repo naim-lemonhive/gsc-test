@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
-
+Disallow: /noindex.html
+Disallow: /soft404.html
 Sitemap: https://bps.sitebeacon.io/sitemap.xml

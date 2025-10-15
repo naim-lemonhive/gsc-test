@@ -2,90 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Broken Test Site - Home</title>
-  <!-- Missing viewport for mobile usability -->
-  <meta name="description" content="broken broken broken broken broken site best site best site">
-  <script src="/assets/script.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <meta name="google-site-verification" content="EsO6YsS1HmaeCU9l3sVzQpTNSj9r2vZjMjiTMJLqAo0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Site Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-200 text-center">
+<body class="bg-gray-100 font-sans">
+  <header class="bg-blue-600 text-white p-4">
+    <h1 class="text-2xl">Demo Website - Index Coverage Issues</h1>
+  </header>
 
-  <h1 class="text-4xl font-bold">🚨 Welcome to Broken Test Site 🚨</h1>
+  <main class="p-6 space-y-4">
+    <p>Welcome to our demo site for Google Search Console crawl/index testing.</p>
 
-  <!-- Huge unoptimized image -->
-  <img src="assets/big-image.jpg" alt="">
-
-  <!-- Duplicate big image (LCP issue + wasted bandwidth) -->
-  <img src="assets/big-image.jpg" alt="duplicate">
-
-  <!-- Deprecated tag -->
-  <marquee>🚨 This is a marquee - bad for accessibility 🚨</marquee>
-
-  <!-- Broken iframe -->
-  <iframe src="http://nonexistent-website-12345.com" width="600" height="400"></iframe>
-
-  <!-- Ads that load late = CLS -->
-  <div style="height:50px;"></div>
-  <script>
-    setTimeout(() => {
-      const ad = document.createElement("div");
-      ad.style.height = "250px";
-      ad.style.background = "yellow";
-      ad.innerText = "ADVERTISEMENT - layout shift incoming!";
-      document.body.prepend(ad);
-    }, 2000);
-  </script>
-
-  <!-- Navigation (duplicate links + broken link) -->
-  <nav class="mt-5">
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="amp.html">AMP Page</a> |
-    <a href="missing.html">Broken Link</a>
-      <a href="valid-page.html">Valid Link</a>
-  </nav>
-
-  <!-- Keyword stuffing -->
-  <section class="mt-10">
-    <h2>Best Site Ever</h2>
-    <p>
-      This is the best site best site best site best site best site best site best site best site best site.  
-      Cheap products cheap products cheap products cheap products cheap products cheap products cheap products.  
-      SEO SEO SEO SEO SEO SEO SEO SEO SEO SEO!
-    </p>
-  </section>
-
-  <!-- Accessibility issues: tiny text, bad contrast -->
-  <p style="font-size:8px; color:#ccc;">This text is unreadable on mobile.</p>
-
-  <!-- Bad table layout -->
-  <table border="1" width="100%">
-    <tr>
-      <td><h3>Column 1</h3></td>
-      <td><h3>Column 2</h3></td>
-      <td><h3>Column 3</h3></td>
-    </tr>
-    <tr>
-      <td>Some content</td>
-      <td>Some more content</td>
-      <td><img src="assets/blurry-logo.png"></td>
-    </tr>
-  </table>
-
-  <!-- Autoplay video -->
-  <video autoplay loop width="400">
-    <source src="assets/inline-video.mp4" type="video/mp4">
-  </video>
-
-  <p class="mt-10">This page is intentionally overloaded with bad practices for testing purposes.</p>
-
-  <!-- Multiple alerts = bad UX -->
-  <script>
-    alert("Warning: Slow Page!");
-    alert("Another blocking alert!");
-  </script>
-
+    <ul class="list-disc pl-5 space-y-2">
+      <li><a href="about.html" class="text-blue-600 hover:underline">About Page</a></li>
+      <li><a href="broken.html" class="text-blue-600 hover:underline">Broken Page (404)</a></li>
+      <li><a href="redirect1.html" class="text-blue-600 hover:underline">Redirect Chain</a></li>
+      <li><a href="noindex.html" class="text-blue-600 hover:underline">Noindex Page</a></li>
+      <li><a href="soft404.html" class="text-blue-600 hover:underline">Soft 404 Page</a></li>
+      <li><a href="duplicate1.html" class="text-blue-600 hover:underline">Duplicate Content 1</a></li>
+      <li><a href="duplicate2.html" class="text-blue-600 hover:underline">Duplicate Content 2</a></li>
+    </ul>
+  </main>
 </body>
 </html>
