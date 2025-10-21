@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo Site Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      var script = document.createElement("script");
+      script.id = "rum-script";
+      script.dataset.projectid = "BS-066ffed299";
+      script.type = "text/javascript";
+      script.src = "https://gateway-api.sitebeacon.io/v1/sb-script";
+      document.getElementsByTagName('body')[0].appendChild(script);
+</script>
 </head>
 <body class="bg-gray-100 font-sans">
   <header class="bg-blue-600 text-white p-4">
